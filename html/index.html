@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>
+        <a href="index.html" style="text-decoration: none; color: black"
+          >Azure Skyways</a
+        >
+      </h1>
+      <div>
+        <a href="aboutUs.html">About Us</a>
+        <a href="contactUs.html">Contact Us</a>
+        <a href="myTrips.html">My Trips</a>
+      </div>
+      <div>
+        <a href="authenticate.html?auth=LogIn">Login</a>
+        <a class="signUp" href="authenticate.html?auth=signUp">Sign-Up</a>
+      </div>
+    </nav>
+
+    <div class="entire_container">
+      <div class="img_box">
+        <img id="island_img" src="../imgs/airplane.png" alt="" />
+      </div>
+
+      <div class="part_one">
+        <div class="part_one_text">
+          <span>Percision Hospitality</span>
+          <h1>The Art of</h1>
+          <h1>Elevated Travel.</h1>
+          <form action="">
+            <div class="from">
+              <label for="from">Departure</label>
+              <div>
+                <img
+                  class="flight takeoff"
+                  src="../imgs/flight_takeoff.svg"
+                  alt=""
+                />
+                <input type="text" placeholder="From Where" />
+              </div>
+            </div>
+            <div class="To">
+              <label for="To">Destination</label>
+              <div>
+                <img
+                  class="flight takeoff"
+                  src="../imgs/flight_land.svg"
+                  alt=""
+                />
+                <input type="text" placeholder="To Where" />
+              </div>
+            </div>
+            <div class="depart_date">
+              <label for="depart_date">Departure Date</label>
+              <input type="date" />
+            </div>
+            <div class="return_date">
+              <label for="return_date">Return Date</label>
+              <input type="date" />
+            </div>
+            <div class="search_container">
+              <a class="search" href="">Search Flights</a
+              ><img src="../imgs/arrow_right_grey.svg" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="part_two">
+        <div>
+          <div>
+            <h2>Suggest Flights For You</h2>
+            <p>Curated premium routes based on your preferences</p>
+          </div>
+          <div class="all_deals">
+            <p>View All Deals<img src="../imgs/arrow_right_grey.svg" /></p>
+          </div>
+        </div>
+        <div id="all_flights">
+          <div class="Manama">
+            <img src="../imgs/newYork.png" alt="" />
+            <div>
+              <div class="destinations">
+                <p>Manama → New York</p>
+                <p>From</p>
+              </div>
+              <div class="destinations_price">
+                <div>
+                  <h2>Heathrow</h2>
+                  <h2>Express</h2>
+                </div>
+                <h2 class="price">200BHD</h2>
+              </div>
+            </div>
+            <button>Book Now</button>
+          </div>
+          <div class="Damascus">
+            <img src="../imgs/Tokyo.png" alt="" />
+            <div>
+              <div class="destinations">
+                <p>Damascus → Tokyo</p>
+                <p>From</p>
+              </div>
+              <div class="destinations_price">
+                <div>
+                  <h2>Pacific</h2>
+                  <h2>Gateway</h2>
+                </div>
+                <h2 class="price">150BHD</h2>
+              </div>
+            </div>
+            <button>Book Now</button>
+          </div>
+          <div class="Riyadh">
+            <img src="../imgs/Paris.png" alt="" />
+            <div>
+              <div class="destinations">
+                <p>Riyadh → Paris</p>
+                <p>From</p>
+              </div>
+              <div class="destinations_price">
+                <div>
+                  <h2>Continental</h2>
+                  <h2>First</h2>
+                </div>
+                <h2 class="price">175BHD</h2>
+              </div>
+            </div>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="part_three">
+        <div class="part_three_img_container">
+          <img class="part_three_imgs" src="../imgs/seat_recline.svg" alt="" />
+          <h3>Unmatched Comfort</h3>
+          <p>
+            Experience our ergonomic suites featuring fully flat beds and direct
+            aisle access across all long-haul fleets.
+          </p>
+        </div>
+        <div class="part_three_img_container">
+          <img class="part_three_imgs" src="../imgs/globe.svg" alt="" />
+          <h3>Global Connectivity</h3>
+          <p>
+            Connecting you to over 150 destinations worldwide through our
+            strategic hubs and partner networks.
+          </p>
+        </div>
+        <div class="part_three_img_container">
+          <img class="part_three_imgs" src="../imgs/clock.svg" alt="" />
+          <h3>Puncuality First</h3>
+          <p>
+            Recognized as the world's most on-time airline three years running.
+            Your time is our most valuable asset.
+          </p>
+        </div>
+      </div>
+      <div class="part_four">
+        <h2>Trending Destinations</h2>
+        <div>
+          <div class="dubai">
+            <img src="../imgs/dubai.png" alt="" />
+            <p>Dubai</p>
+          </div>
+          <div class="right_pics">
+            <div class="right_pics_top">
+              <img class="kyoto" src="../imgs/kyoto.png" alt="" />
+              <p class="kyoto_p">Kyoto</p>
+              <img class="santorini" src="../imgs/santorini.png" alt="" />
+              <p class="santorini_p">Santorini</p>
+            </div>
+            <p class="venice_p">Venice</p>
+            <img class="venice" src="../imgs/venice.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="part_five">
+        <div class="footer_container">
+          <div>
+            <h2 style="color: white">Experience</h2>
+            <p style="color: grey">Flight Status</p>
+            <p style="color: grey">Travel Status</p>
+            <p style="color: grey">Baggage Policy</p>
+          </div>
+          <div>
+            <h2 style="color: white">Support</h2>
+            <p style="color: grey">Help Center</p>
+            <p style="color: grey">
+              <a
+                href="privacyPolicy.html"
+                style="color: grey; text-decoration: none"
+                >Privacy Policy</a
+              >
+            </p>
+            <p style="color: grey">
+              <a
+                href="termsOfService.html"
+                style="color: grey; text-decoration: none"
+                >Terms of Services</a
+              >
+            </p>
+          </div>
+          <div></div>
+        </div>
+        <hr />
+        <h3>@CopyRight 2026</h3>
+      </div>
+    </div>
+    <script src="../scripts/section_animations.js"></script>
+  </body>
+</html>

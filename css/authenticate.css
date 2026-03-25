@@ -1,0 +1,176 @@
+html , body{
+    height: 100%;
+    width : 100%;
+}
+body{
+    margin: 0px;
+    display: flex;
+    font-family: "Roboto",sans-serif;
+    overflow: hidden;
+}
+.left_section{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.go_back{
+position: absolute;
+top: 10%;
+left: 10%;
+display: flex;
+align-items: center;
+gap: 10px;
+color: grey;
+cursor: pointer;
+z-index: 1;
+}
+.go_back>a{
+    text-decoration: none;
+    color: grey;
+}
+.middle_line{
+    height: 100vh;
+}
+.right_section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    object-fit: contain;
+}
+.right_section>h1{
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    font-style: italic;
+}
+.right_section>img{
+    width: 100%;
+    height: 100%;
+}
+.authenticate_btns{
+    display: flex;
+    width: 150px;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+.authenticate_btns>*{
+    margin: 0;
+}
+.authenticate_btns>.selected{
+    content: "";
+    position: absolute;
+    top: -20%;
+    width: 60px;
+    height: 25px;
+    background-color: lightblue;
+    border-radius: 5px;
+    z-index: -1;
+    transition: left 0.25s linear;
+}
+.signUp{
+    left: 30%;
+}
+.logIn{
+    left: 53%;
+}
+.left_section_container{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.left_section_main{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: center;
+    gap: 40px;
+}
+.username , .password, .first_name{
+    position: relative;
+    font-weight: bold;
+}
+.username>input , .password>input, .first_name>input{
+    width: 75%;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding:0px 5px;
+}
+/*.username>label{
+position: absolute;
+top: 20%;
+left: 2%;
+color: grey;
+}*/
+.form_btn{
+    align-self: center;
+    border-radius: 5px;
+    background-color: lightblue;
+    width: 50%;
+    padding: 10px 0px;
+    font-size: 17px;
+    border: none;
+}
+.sign_up_btn, .log_in_btn{
+    cursor: pointer;
+}
+.other_options{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.other_options>hr{
+    width: 30%;
+    position: absolute;
+}
+.other_options hr:first-child{
+    top: 35%;
+    left: 0%;
+}
+.other_options hr:last-child{
+    top: 35%;
+    left: 70%;
+}
+.other_options>p{
+    text-align: center;
+}
+.google_apple_btns{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+.google_apple_btns>button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+}
+
+/* Section reveal animation */
+.animate-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.animate-section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
